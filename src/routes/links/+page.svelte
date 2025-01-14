@@ -13,10 +13,10 @@
     });
 </script>
 
-<!-- <div class="bg-cover bg-center bg-no-repeat w-full h-[120vh] absolute top-0 z-10 pointer-events-none" style="background-image: url(/images/links/noise.webp);"></div>
-<div class="bg-cover bg-center bg-no-repeat w-full h-[120vh] absolute top-0 mix-blend-multiply pointer-events-none" style="background-image: url(/images/links/crumple.webp);"></div>
-<div class="bg-cover bg-center bg-no-repeat w-full h-[120vh] absolute top-0 -z-10 pointer-events-none" style="background-image: url(/images/links/paper.webp);"></div> -->
-<div class="w-full h-full pt-20 py-10 flex flex-col items-center" style="--height: {screenHeight}px;">
+<div class="background z-10" style="background-image: url(/images/links/noise.webp);"></div>
+<div class="background mix-blend-multiply" style="background-image: url(/images/links/crumple.webp);"></div>
+<div class="background -z-10" style="background-image: url(/images/links/paper.webp);"></div>
+<div class="w-full sm:max-w-[25rem] max-h-full flex flex-col justify-center items-center" style="--height: {screenHeight}px;">
     <img class="py-10" src="/images/links/logo.webp" />
     <div class="flex flex-col justify-center items-center pt-10 gap-4">
         <a href={PUBLIC_BODO_INSTAGRAM} target="_blank">
@@ -33,3 +33,9 @@
         </a>
     </div>
 </div>
+
+<style>
+    .background {
+        @apply bg-cover bg-center bg-no-repeat w-full h-[120vh] fixed top-0 pointer-events-none
+    }
+</style>
