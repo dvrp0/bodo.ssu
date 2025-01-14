@@ -16,8 +16,8 @@
 <div class="background z-10" style="background-image: url(/images/links/noise.webp);"></div>
 <div class="background mix-blend-multiply" style="background-image: url(/images/links/crumple.webp);"></div>
 <div class="background -z-10" style="background-image: url(/images/links/paper.webp);"></div>
-<div class="w-full sm:max-w-[25rem] max-h-full flex flex-col justify-center items-center" style="--height: {screenHeight}px;">
-    <img class="py-10" src="/images/links/logo.webp" />
+<div class="w-full sm:max-w-[25rem] max-h-full my-auto py-12 flex flex-col justify-center items-center" style="--height: {screenHeight}px;">
+    <img class="mb-10" src="/images/links/logo.webp" />
     <div class="flex flex-col justify-center items-center pt-10 gap-4">
         <a href={PUBLIC_BODO_INSTAGRAM} target="_blank">
             <img src="/images/links/bodo-insta.webp" />
